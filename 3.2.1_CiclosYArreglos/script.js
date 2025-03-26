@@ -116,3 +116,24 @@ for (let i = 0; i < numerosAzar.length; i++){
 
 console.log("Los numeros pares son: " + pares);
 console.log("Los numeros impares son: " + impares);
+
+
+
+//Objetos -> Objeto literal -> Diccionario
+//Estructura clave-valor.
+let fruta= {
+    nombre: "Naranja",
+    tipo: "Citrico",
+};
+
+let fruta2 = {
+    nombre: "Manzana",
+    tipo: "Pomacea",
+}
+
+
+
+let frutasObjetos = [fruta,fruta2];
+console.log(frutasObjetos[0].tipo); // Accediendo a las propidades de un objeto literal
+
+
