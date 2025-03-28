@@ -181,3 +181,15 @@ function crearGato(nuevoNombreGato){
 
 crearGato("Michi");
 console.log("Fuera de la funcion " + nombreTigre);
+
+
+//Tipos de datos II
+
+/*
+    -null
+    -undefined
+
+*/
+
+let persona = null; //JS va a reservar espacio en memoria para guardar ahi un valor.
+let persona2 = undefined; //JS no va a reservar espacio en memoria para guardar ahi un valor.
