@@ -1,0 +1,29 @@
+.optionsGenerator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 110px 500px ;
+    background-color: grey;
+}
+
+.passGenerate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.optionsGenerator div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+    color: white;
+    background-color: black;
+
+}
