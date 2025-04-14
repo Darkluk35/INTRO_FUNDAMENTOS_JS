@@ -9,40 +9,38 @@
   <body>
     <div class="passGenerate">
       <h1>Password Generator</h1>
-      <h1 id="passNew">sfbdlkfdskbfhasdf</h1>
+      <p id="passNew">sfbdlkfdskbfhasdf</p>
     </div>
 
     <div class="optionsGenerator">
-      <label>
+      <div class="rangeOptions">
         <p>Character Lenght</p>
+        <span id="rangeValue">12</span>
         <input type="range" id="rangePass" min="1" max="20" />
+      </div>
 
-        <div>
+      <div class="checkOptions">
+        <input type="checkbox" id="mayusPass" />
+        <p>Include Uppercase Letters</p>
+      </div>
 
-        <label
-          ><input type="checkbox" id="mayusPass" />
-          <p>Include Uppercase Letters</p></label
-        >
+      <div class="checkOptions">
+        <input type="checkbox" id="minusPass" />
+        <p>Include Lowercase Letters</p>
+      </div>
 
-        <label
-          ><input type="checkbox" id="minusPass" />
-          <p>Include Lowercase Letters</p></label
-        >
+      <div class="checkOptions">
+        <input type="checkbox" id="numberPass" />
+        <p>Include Numbers</p>
+      </div>
 
-        <label
-          ><input type="checkbox" id="numberPass" />
+      <div class="checkOptions">
+        <input type="checkbox" id="symbolPass" />
+        <p>Include Symbols</p>
+      </div>
 
-          <p>Include Numbers</p></label
-        ></label
-      >
-      <label
-        ><input type="checkbox" id="symbolPass" />
-        <p>Include Symbols</p></label
-      >
       <button id="btnGenerator">Generar</button>
     </div>
-    </div>
-
     <script src="script.js"></script>
   </body>
 </html>

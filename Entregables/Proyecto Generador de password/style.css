@@ -1,21 +1,18 @@
 .optionsGenerator {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
-    padding: 110px 500px ;
+    padding: 10px 10px ;
+    border-radius: 10px;
     background-color: grey;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    
 }
 
 .passGenerate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.optionsGenerator div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +23,13 @@ body{
     color: white;
     background-color: black;
 
+}
+
+.checkOptions{
+    display: flex;
+    justify-content: center;
+}
+#passNew{
+    background-color: rgb(46, 45, 45);
+    padding: 10px 100px;
 }

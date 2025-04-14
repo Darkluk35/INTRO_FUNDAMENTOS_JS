@@ -5,15 +5,27 @@ var baseNum = "0123456789";
 var baseSym = "!#$%&/()=?¡*+~^{}[]-_.:,;<>|@";
 
 function generator(){
+    
+    base = "";
     let contentRange = document.getElementById("rangePass").value;
-
+    if (contentRange >= 8)  {
+    if ([minusPass, mayusPass, numberPass, symbolPass].some(condicion => condicion.checked)){
     if (minusPass.checked) base += baseMin;
     if (mayusPass.checked) base += baseMay;
     if (numberPass.checked) base += baseNum;
     if (symbolPass.checked) base += baseSym;
-
     passNew.innerText = generatePassword(base, contentRange);
 }
+else{
+    alert("Debes seleccionar al menos un tipo de caracter.");
+    passNew.innerText = "Password";
+}
+}
+else{
+    alert("El password debe tener al menos 8 caracteres.");
+    passNew.innerText = "Password";
+}
+};
 //····························································································//
 const generatePassword = (base, contentRange) => {
     let password = "";
