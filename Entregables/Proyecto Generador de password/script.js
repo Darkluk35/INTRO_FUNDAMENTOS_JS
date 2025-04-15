@@ -15,6 +15,14 @@ function generator(){
     if (numberPass.checked) base += baseNum;
     if (symbolPass.checked) base += baseSym;
     passNew.innerText = generatePassword(base, contentRange);
+    /////
+    if (contentRange <=20){
+        alertPass.innerText("Seguridad baja");
+        alert("Bien hecho");
+    }
+
+
+    ////////
 }
 else{
     alert("Debes seleccionar al menos un tipo de caracter.");

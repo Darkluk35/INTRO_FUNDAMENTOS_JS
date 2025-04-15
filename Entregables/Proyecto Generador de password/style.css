@@ -6,7 +6,7 @@
     border-radius: 10px;
     background-color: grey;
     width: 300px;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     margin-top: 10px;
     
@@ -32,4 +32,8 @@ body{
 #passNew{
     background-color: rgb(46, 45, 45);
     padding: 10px 100px;
+}
+
+.typeSecurity{
+    color: red;
 }
