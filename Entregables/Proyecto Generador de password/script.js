@@ -8,6 +8,7 @@ function generator(){
     
     base = "";
     let contentRange = document.getElementById("rangePass").value;
+    let contentRangeStyle = document.getElementById("rangePass");
     if (contentRange >= 8)  {
     if ([minusPass, mayusPass, numberPass, symbolPass].some(condicion => condicion.checked)){
     if (minusPass.checked) base += baseMin;
@@ -16,9 +17,14 @@ function generator(){
     if (symbolPass.checked) base += baseSym;
     passNew.innerText = generatePassword(base, contentRange);
     /////
-    if (contentRange <=20){
-        alertPass.innerText("Seguridad baja");
-        alert("Bien hecho");
+    //console.log(contentRange);
+    if (contentRange <= 12) {
+        alertPass.innerText = "Seguridad Baja";
+        contentRangeStyle.classList.add = ('color-green');
+    } else if (contentRange <= 16) {
+        alertPass.innerText = "Seguridad Media";
+    } else {
+        alertPass.innerText = "Seguridad Alta";
     }
 
 
@@ -45,5 +51,4 @@ const generatePassword = (base, contentRange) => {
 };
 
 let startGenerated = document.getElementById("btnGenerator");
-
 startGenerated.addEventListener("click",generator);
